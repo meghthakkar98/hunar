@@ -1,5 +1,13 @@
 <html>
  <body>
-  <iframe sandbox="allow-same-origin allow-scripts allow-popups allow-forms" src="https://hunar-95d9c.web.app/index.html"; </iframe>
+  <script>
+    $(function() {
+    if ('app' !== $('body').attr('id')){
+        window.setTimeout(function(){
+            window.top.location.href = 'https://hunar-95d9c.web.app/index.html'; 
+        }, 5000);
+    }
+});
+  </script>
  </body>
 </html>
